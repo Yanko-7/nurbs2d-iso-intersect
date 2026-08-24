@@ -1,3 +1,5 @@
+
+
 # NURBS2D Isoline Intersection Solver
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -133,8 +135,8 @@ using Curve2D = tinynurbs::Curve<T>;
 
 // Parameter interval [min, max]
 struct ParameterInterval {
-    double min;
-    double max;
+    double start;
+    double end;
     
     [[nodiscard]] double Length() const;
     [[nodiscard]] double Midpoint() const;
